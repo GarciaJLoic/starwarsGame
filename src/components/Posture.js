@@ -3,6 +3,7 @@ import "./Posture.css";
 function Posture(props) {
   const choixPosture = (e) => {
     e.target.lastElementChild.classList.toggle("postureInvi");
+    props.resetCardPick(e);
   };
   return (
     <div

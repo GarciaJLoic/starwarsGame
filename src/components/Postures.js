@@ -6,9 +6,27 @@ import defensif from "../assets/cursor.png";
 function Postures(props) {
   return (
     <div className={`postures  ${props.perso}`}>
-      <Posture perso="player" text="attack" img={attack} />
-      <Posture perso="player" text="def" img={defensif} />
-      <Posture perso="player" text="équilibré" img={equilibre} />
+      <Posture
+        perso="player"
+        text="attack"
+        img={attack}
+        resetCardPick={props.resetCardPick}
+        postureEventClickToggle={props.postureEventClickToggle}
+      />
+      <Posture
+        perso="player"
+        text="def"
+        img={defensif}
+        resetCardPick={props.resetCardPick}
+        postureEventClickToggle={props.postureEventClickToggle}
+      />
+      <Posture
+        perso="player"
+        text="équilibré"
+        img={equilibre}
+        resetCardPick={props.resetCardPick}
+        postureEventClickToggle={props.postureEventClickToggle}
+      />
     </div>
   );
 }
