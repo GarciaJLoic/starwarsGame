@@ -1,0 +1,57 @@
+.blocKCardPlayer,
+.blocKCardOpponent {
+  display: flex;
+}
+.cardPack {
+  align-self: center;
+  width: 650px;
+  height: 375px;
+  display: flex;
+  justify-content: space-between;
+}
+.cardPackPlayer,
+.cardPackOpponent {
+  border: solid 2px purple;
+  width: 150px;
+  height: 150px;
+
+  background-color: blue;
+}
+
+.cardPackPlayer {
+  align-self: flex-end;
+}
+.card {
+  border: solid 2px purple;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+.cardPlayerVerso {
+  background-color: blue;
+  align-self: flex-end;
+}
+.cardPlayerRecto {
+  background-color: peru;
+  align-self: flex-end;
+}
+.cardPlayerVersoActive,
+.cardPlayerRectoActive {
+  translate: 250px;
+  transform: rotateY(180deg);
+  transition: all 0.8s;
+}
+.cardPlayerVersoActive,
+.cardPlayerVersoDiscard {
+  backface-visibility: hidden;
+}
+.cardPlayerVersoDiscard,
+.cardPlayerRectoDiscard {
+  translate: 250px;
+  transform: rotateY(180deg);
+  opacity: 0;
+  transition: all 1.2s;
+}
+.cardOpponent {
+  background-color: brown;
+}
