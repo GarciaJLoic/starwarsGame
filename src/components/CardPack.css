@@ -31,6 +31,14 @@
   background-color: blue;
   align-self: flex-end;
 }
+
+.cardOpponentVerso {
+  background-color: blue;
+}
+
+.cardOpponentRecto {
+  background-color: peru;
+}
 .cardPlayerRecto {
   background-color: peru;
   align-self: flex-end;
@@ -41,8 +49,17 @@
   transform: rotateY(180deg);
   transition: all 0.8s;
 }
+
+.cardOpponentVersoActive,
+.cardOpponentRectoActive {
+  translate: -246px;
+  transform: rotateY(180deg);
+  transition: all 0.8s;
+}
 .cardPlayerVersoActive,
-.cardPlayerVersoDiscard {
+.cardPlayerVersoDiscard,
+.cardOpponentVersoActive,
+.cardOpponentVersoDiscard {
   backface-visibility: hidden;
 }
 .cardPlayerVersoDiscard,
@@ -52,6 +69,20 @@
   opacity: 0;
   transition: all 1.2s;
 }
-.cardOpponent {
-  background-color: brown;
+
+.cardOpponentVersoDiscard,
+.cardOpponentRectoDiscard {
+  translate: -246px;
+  transform: rotateY(180deg);
+  opacity: 0;
+  transition: all 1.2s;
+}
+.attack {
+  filter: drop-shadow(0 0 2rem red);
+}
+.defensif {
+  filter: drop-shadow(0 0 2rem blue);
+}
+.equilibre {
+  filter: drop-shadow(0 0 2rem green);
 }

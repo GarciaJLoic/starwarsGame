@@ -7,21 +7,24 @@ function Postures(props) {
   return (
     <div className={`postures  ${props.perso}`}>
       <Posture
-        perso="player"
+        classe="attack"
+        perso={props.perso}
         text="attack"
         img={attack}
         resetCardPick={props.resetCardPick}
         postureEventClickToggle={props.postureEventClickToggle}
       />
       <Posture
-        perso="player"
+        classe="defensif"
+        perso={props.perso}
         text="def"
         img={defensif}
         resetCardPick={props.resetCardPick}
         postureEventClickToggle={props.postureEventClickToggle}
       />
       <Posture
-        perso="player"
+        classe="equilibre"
+        perso={props.perso}
         text="équilibré"
         img={equilibre}
         resetCardPick={props.resetCardPick}
