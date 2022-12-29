@@ -3,17 +3,18 @@
   display: flex;
 }
 .cardPack {
-  align-self: center;
-  width: 650px;
+  width: 1000px;
   height: 375px;
   display: flex;
   justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
 }
 .cardPackPlayer,
 .cardPackOpponent {
   border: solid 2px purple;
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 250px;
 
   background-color: blue;
 }
@@ -23,8 +24,8 @@
 }
 .card {
   border: solid 2px purple;
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 250px;
   position: absolute;
 }
 .cardPlayerVerso {
@@ -83,6 +84,6 @@
 .defensif {
   filter: drop-shadow(0 0 2rem blue);
 }
-.equilibre {
+.love {
   filter: drop-shadow(0 0 2rem green);
 }

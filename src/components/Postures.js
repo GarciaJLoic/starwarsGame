@@ -1,7 +1,7 @@
 import Posture from "./Posture.js";
 import "./Postures.css";
 import attack from "../assets/cursor-hot.png";
-import equilibre from "../assets/cursor-link.png";
+import love from "../assets/cursor-link.png";
 import defensif from "../assets/cursor.png";
 function Postures(props) {
   return (
@@ -13,6 +13,7 @@ function Postures(props) {
         img={attack}
         resetCardPick={props.resetCardPick}
         postureEventClickToggle={props.postureEventClickToggle}
+        setLoveCounter={props.setLoveCounter}
       />
       <Posture
         classe="defensif"
@@ -21,14 +22,16 @@ function Postures(props) {
         img={defensif}
         resetCardPick={props.resetCardPick}
         postureEventClickToggle={props.postureEventClickToggle}
+        setLoveCounter={props.setLoveCounter}
       />
       <Posture
-        classe="equilibre"
+        classe="love"
         perso={props.perso}
-        text="équilibré"
-        img={equilibre}
+        text="love"
+        img={love}
         resetCardPick={props.resetCardPick}
         postureEventClickToggle={props.postureEventClickToggle}
+        setLoveCounter={props.setLoveCounter}
       />
     </div>
   );

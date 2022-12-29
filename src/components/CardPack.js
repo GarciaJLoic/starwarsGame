@@ -6,9 +6,10 @@ function CardPack({ perso, cardStateVerso, cardStateRecto, changeStateCard }) {
       <div className={`cardPack${perso}`}></div>
 
       <div className={`card ${cardStateRecto}`}></div>
+
       <div
         className={`card ${cardStateVerso}`}
-        onClick={() => changeStateCard("Active", "toggle")}
+        onClick={() => changeStateCard("Active", "toggle", perso)}
       ></div>
     </div>
   );
