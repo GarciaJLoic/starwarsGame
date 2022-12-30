@@ -1,0 +1,97 @@
+.blocKCardPlayer,
+.blocKCardOpponent {
+  display: flex;
+}
+.cardPack {
+  width: 1000px;
+  height: 375px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.cardPackPlayer,
+.cardPackOpponent {
+  border: solid 2px purple;
+  width: 180px;
+  height: 250px;
+
+  background-color: blue;
+}
+
+.cardPackPlayer {
+  align-self: flex-end;
+}
+.card {
+  border: solid 2px purple;
+  width: 180px;
+  height: 250px;
+  position: absolute;
+}
+.cardPlayerVerso {
+  background-color: blue;
+  align-self: flex-end;
+}
+
+.cardOpponentVerso {
+  background-color: blue;
+}
+
+.cardOpponentRecto {
+  background-color: peru;
+}
+.cardPlayerRecto {
+  background-color: peru;
+  align-self: flex-end;
+}
+.cardPlayerVersoActive,
+.cardPlayerRectoActive {
+  translate: 250px;
+  transform: rotateY(180deg);
+  transition: all 0.8s;
+}
+
+.cardOpponentVersoActive,
+.cardOpponentRectoActive {
+  translate: -246px;
+  transform: rotateY(180deg);
+  transition: all 0.8s;
+}
+.cardPlayerVersoActive,
+.cardPlayerVersoDiscard,
+.cardOpponentVersoActive,
+.cardOpponentVersoDiscard {
+  backface-visibility: hidden;
+}
+
+.cardPlayerRectoLove.love,
+.cardOpponentRectoLove.love {
+  background-color: aqua;
+  transform: rotateY(-180deg);
+  transition: all 1s;
+  filter: drop-shadow(0 0 0rem green);
+}
+.cardPlayerVersoDiscard,
+.cardPlayerRectoDiscard {
+  translate: 250px;
+  transform: rotateY(180deg);
+  opacity: 0;
+  transition: all 1.2s;
+}
+
+.cardOpponentVersoDiscard,
+.cardOpponentRectoDiscard {
+  translate: -246px;
+  transform: rotateY(180deg);
+  opacity: 0;
+  transition: all 1.2s;
+}
+.attack {
+  filter: drop-shadow(0 0 2rem red);
+}
+.defensif {
+  filter: drop-shadow(0 0 2rem blue);
+}
+.love {
+  filter: drop-shadow(0 0 2rem green);
+}

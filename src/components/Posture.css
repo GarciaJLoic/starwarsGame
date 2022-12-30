@@ -1,0 +1,20 @@
+.posture {
+  border: solid 2px black;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  opacity: 1;
+}
+
+.posture h1,
+.posture img {
+  pointer-events: none;
+}
+.postureInvi {
+  opacity: 0;
+}
+.disabledEventClick {
+  pointer-events: none;
+}
