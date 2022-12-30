@@ -9,19 +9,25 @@ function Posture(props) {
     return postureArr[randomChoise];
   };
   const testerLovePosture = (e, perso) => {
+    // Vérifie si la posture est love
     if (e.includes("love")) {
-      console.log(perso);
+      // Récupère la barre de progression
       let progressBar = document.querySelector(`.progressBar${perso}`)
         .attributes[0];
+      // Si elle est inférieur à 4 on ajoute 1
       if (parseInt(progressBar.value) < 4) {
         progressBar.value = parseInt(progressBar.value) + 1;
-
+        //  Si elle est égale à 4 on change le texte
         if (parseInt(progressBar.value) === 4) {
           document.getElementsByClassName(
             `posture${perso}`
           )[2].firstChild.innerHTML = "POWER OF LOVE";
         }
       } else {
+        // Si la valeur est supérieur à 4 alors on remet à zéro
+        document
+          .querySelector(`.card${perso}RectoActive`)
+          .classList.add(`card${perso}RectoLove`);
         progressBar.value = 0;
         document.getElementsByClassName(
           `posture${perso}`

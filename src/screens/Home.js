@@ -9,12 +9,12 @@ function Home() {
     useState(`cardPlayerVerso`);
   const [cardStateRectoPlayer, setCardStateRectoPlayer] =
     useState(`cardPlayerRecto`);
-  const [loveCounterPlayer, setLoveCounterPlayer] = useState(0);
+  const [loveCounterPlayer, setLoveCounterPlayer] = useState(4);
   const [cardStateVersoOpponent, setCardStateVersoOpponent] =
     useState(`cardOpponentVerso`);
   const [cardStateRectoOpponent, setCardStateRectoOpponent] =
     useState(`cardOpponentRecto`);
-  const [loveCounterOpponent, setLoveCounterOpponent] = useState(0);
+  const [loveCounterOpponent, setLoveCounterOpponent] = useState(4);
   // Bloque le clic sur les postures
   const postureEventClickToggle = (action) => {
     const postureDisabled = document.getElementsByClassName("posture");
@@ -55,12 +55,12 @@ function Home() {
         .lastElementChild.classList.toggle("postureInvi");
       // Fait disparaître les cartes
       changeStateCard("Discard", "add", "Player");
-    }, 1000);
+    }, 2000);
     // délais de 2sec
     setTimeout(() => {
       // Remet les states en position d'origine
       changeStateCard("", "add", "Player");
-    }, 2000);
+    }, 3000);
   };
   return (
     <div className="home">
