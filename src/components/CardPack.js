@@ -1,5 +1,5 @@
+import axios from "axios";
 import "./CardPack.css";
-
 function CardPack({ perso, cardStateVerso, cardStateRecto, changeStateCard }) {
   return (
     <div className={`blocKCard${perso}`}>

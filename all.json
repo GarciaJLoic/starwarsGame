@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "name": "Luke Skywalker",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/2/20/LukeTLJ.jpg",
+    "love": "https://raw.githubusercontent.com/GarciaJLoic/starwarsGame/dev/src/assets/luke.png",
+    "attack": 4,
+    "life": 5,
+    "deck": "light"
+  },
+  {
+    "id": 2,
+    "name": "C3PO",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/3/3f/C-3PO_TLJ_Card_Trader_Award_Card.png",
+    "love": "https://raw.githubusercontent.com/GarciaJLoic/starwarsGame/dev/src/assets/c3p-cute.jpg",
+    "attack": 2,
+    "life": 2,
+    "deck": "light"
+  },
+  {
+    "id": 3,
+    "name": "R2D2",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/e/eb/ArtooTFA2-Fathead.png",
+    "love": "https://4.bp.blogspot.com/-4OGQ9Wi1DPY/Umzmy5aP_bI/AAAAAAAAP1w/lLCYl9gOG7c/s1600/f89884d43eba11e39e3b22000ab5ba93_8.jpg",
+    "attack": 3,
+    "life": 2,
+    "deck": "light"
+  },
+  {
+    "id": 4,
+    "name": "Leïa Organa",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/f/fc/Leia_Organa_TLJ.png",
+    "love": "https://culturepsyp7.files.wordpress.com/2017/05/ian-solo-n-a-pas-l-air-d-apprecier-le-baiser-entre-luke-et-leila_123535_wide.jpg",
+    "attack": 4,
+    "life": 4,
+    "deck": "light"
+  },
+  {
+    "id": 5,
+    "name": "Obi-Wan Kenobi",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/4/4e/ObiWanHS-SWE.jpg",
+    "love": "https://www.ecranlarge.com/media/cache/1600x1200/uploads/image/000/971/star-wars-episode-iii-la-revanche-des-sith-photo-ewan-mcgregor-971685.jpg",
+    "attack": 5,
+    "life": 3,
+    "deck": "light"
+  },
+  {
+    "id": 6,
+    "name": "Chewbaca",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/4/48/Chewbacca_TLJ.png",
+    "love": "https://www.closeupshop.fr/media/oart_0/oart_s/oart_37385/thumbs/937721_2698198.jpg",
+    "attack": 2,
+    "life": 4,
+    "deck": "light"
+  },
+  {
+    "id": 7,
+    "name": "Han Solo",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/e/e2/TFAHanSolo.png",
+    "love": "https://www.purecostumes.com/mm5/graphics/00000001/R580694_full_1.jpg",
+    "attack": 4,
+    "life": 4,
+    "deck": "light"
+  },
+  {
+    "id": 8,
+    "name": "Yoda",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/d/d6/Yoda_SWSB.png",
+    "love": "https://i.ytimg.com/vi/yhKPk6RI7ds/hqdefault.jpg",
+    "attack": 5,
+    "life": 5,
+    "deck": "light"
+  },
+  {
+    "id": 9,
+    "name": "Lando",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/8/8f/Lando_ROTJ.png",
+    "love": "https://i.etsystatic.com/6717342/r/il/4b42fe/1256420503/il_794xN.1256420503_ab6u.jpg",
+    "attack": 2,
+    "life": 3,
+    "deck": "light"
+  },
+  {
+    "id": 10,
+    "name": "Qui-Gon Jinn",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/f/f6/Qui-Gon_Jinn_Headshot_TPM.jpg",
+    "love": "https://www.deguisementsjarana.com/media/catalog/product/cache/2/image/650x650/9df78eab33525d08d6e5fb8d27136e95/7/0/706423-configurable-706423-maestro-qui-gon-jinn.jpg",
+    "attack": 3,
+    "life": 5,
+    "deck": "light"
+  },
+  {
+    "id": 11,
+    "name": "Padmé Amidala",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/b/b2/Padmegreenscrshot.jpg",
+    "love": "https://photos.costume-works.com/full/queen_amidala_from_star_wars-32001-1.jpg",
+    "attack": 3,
+    "life": 3,
+    "deck": "light"
+  },
+  {
+    "id": 12,
+    "name": "Jar Jar Binks",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/d/d2/Jar_Jar_aotc.jpg",
+    "love": "https://live.staticflickr.com/467/19404455250_099f5a4400_b.jpg",
+    "attack": 1,
+    "life": 1,
+    "deck": "light"
+  },
+  {
+    "id": 13,
+    "name": "Ayla Secura",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/f/f9/Aayla.jpg",
+    "love": "https://w7.pngwing.com/pngs/54/216/png-transparent-aayla-secura-figurine-muscle-aayla-secura-superhero-cartoon-fictional-character.png",
+    "attack": 3,
+    "life": 4,
+    "deck": "light"
+  },
+  {
+    "id": 14,
+    "name": "Mace Windu",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/5/58/Mace_ROTS.png",
+    "love": "https://i.etsystatic.com/5320526/r/il/17a225/302580072/il_570xN.302580072.jpg",
+    "attack": 5,
+    "life": 4,
+    "deck": "light"
+  },
+  {
+    "id": 15,
+    "name": "Ahsoka Tano",
+    "image": "https://lumiere-a.akamaihd.net/v1/images/5cb3c849d5de240001a05880-image_c6729179.jpeg?region=0,0,1536,864",
+    "love": "https://www.netcost-security.fr/wp-content/uploads/2020/12/1607947930_Star-Wars-Ahsoka-Tano-aura-sa-propre-serie-apres-son.jpg",
+    "attack": 4,
+    "life": 3,
+    "deck": "light"
+  },
+  {
+    "id": 16,
+    "name": "Dark Vador",
+    "image": "https://vignette.wikia.nocookie.net/fr.starwars/images/3/32/Dark_Vador.jpg",
+    "love": "https://res.cloudinary.com/buzzfeed-brasil/image/upload/q_auto,f_auto/image-uploads/subbuzz-images/jpeg/4aad9248c81c8864f1cf12f85d17d905.jpg",
+    "attack": 5,
+    "life": 4,
+    "deck": "dark"
+  },
+  {
+    "id": 17,
+    "name": "Tarkin",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/c/c1/Tarkininfobox.jpg",
+    "love": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/047668fb-fcf5-4f67-8225-d13cc4435f67/dbip2st-fff2532f-d8ce-4521-9f5f-3ae8c3561a76.jpg/v1/fill/w_700,h_350,q_70,strp/moff_tarkin_by_weilard_dbip2st-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTYwIiwicGF0aCI6IlwvZlwvMDQ3NjY4ZmItZmNmNS00ZjY3LTgyMjUtZDEzY2M0NDM1ZjY3XC9kYmlwMnN0LWZmZjI1MzJmLWQ4Y2UtNDUyMS05ZjVmLTNhZThjMzU2MWE3Ni5qcGciLCJ3aWR0aCI6Ijw9MTkyMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.CSbDVJFZpUxX21n4rLsXkWT1OiLfBN2bsZY9noabXMM",
+    "attack": 2,
+    "life": 3,
+    "deck": "dark"
+  },
+  {
+    "id": 18,
+    "name": "Greedo",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/c/c6/Greedo.jpg",
+    "love": "https://thumbs.worthpoint.com/zoom/images1/1/0107/16/star-wars-life-size-armor-greedo-mask-hands_1_651a31d98fc720e30532a588bf3313b9.jpg",
+    "attack": 1,
+    "life": 1,
+    "deck": "dark"
+  },
+  {
+    "id": 19,
+    "name": "Jabba le Hutt",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/7/7f/Jabba_SWSB.png",
+    "love": "https://raw.githubusercontent.com/GarciaJLoic/starwarsGame/dev/src/assets/Jabba.png",
+    "attack": 2,
+    "life": 2,
+    "deck": "dark"
+  },
+  {
+    "id": 20,
+    "name": "Dark Sidious",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/d/d8/Emperor_Sidious.png",
+    "love": "https://m.media-amazon.com/images/I/81FEa-sZSbL._AC_UF1000,1000_QL80_.jpg",
+    "attack": 4,
+    "life": 5,
+    "deck": "dark"
+  },
+  {
+    "id": 21,
+    "name": "Boba Fett",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/7/79/Boba_Fett_HS_Fathead.png",
+    "love": "https://unrealitymag.com/wp-content/uploads/2009/04/bad_star_wars_6.jpg",
+    "attack": 3,
+    "life": 2,
+    "deck": "dark"
+  },
+  {
+    "id": 22,
+    "name": "Sebulba",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/1/14/Sebulba_Headshot_Closeup.png",
+    "love": "https://i.etsystatic.com/8095885/r/il/18f002/2070230396/il_fullxfull.2070230396_drxf.jpg",
+    "attack": 2,
+    "life": 4,
+    "deck": "dark"
+  },
+  {
+    "id": 23,
+    "name": "Darth Maul",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/5/50/Darth_Maul_profile.png",
+    "love": "https://thedentedhelmet-f28a.kxcdn.com/forums/data/xfmg/thumbnail/0/172-e0f725eef68e093f9f77b88a123ff698.jpg?1552257035",
+    "attack": 5,
+    "life": 3,
+    "deck": "dark"
+  },
+  {
+    "id": 24,
+    "name": "Barriss Offee",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/3/37/Barrisprofile2.jpg",
+    "love": "https://i.pinimg.com/originals/a5/80/b5/a580b58ec619e8d4f9674897da045436.jpg",
+    "attack": 3,
+    "life": 3,
+    "deck": "dark"
+  },
+  {
+    "id": 25,
+    "name": "Dooku",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/b/b8/Dooku_Headshot.jpg",
+    "love": "https://www.gonnageek.com/wp-content/uploads/2018/06/Count-Dooku.jpg",
+    "attack": 4,
+    "life": 4,
+    "deck": "dark"
+  },
+  {
+    "id": 26,
+    "name": "Jango Fett",
+    "image": "https://vignette.wikia.nocookie.net/starwars/images/5/56/JangoInfobox.png",
+    "love": "http://globalgeeknews.com/wp-content/uploads/2011/03/Boba-Fett-Chicken-Cosplay.jpg",
+    "attack": 4,
+    "life": 4,
+    "deck": "dark"
+  },
+  {
+    "id": 27,
+    "name": "Grievous",
+    "image": "https://static.wikia.nocookie.net/villains-fr/images/7/79/Uy7if20d3nz11.jpg/revision/latest?cb=20201008153511&path-prefix=fr",
+    "love": "http://www.boneboy.com/costume/05grievphotos/FrontStanding01web.jpg",
+    "attack": 3,
+    "life": 4,
+    "deck": "dark"
+  },
+  {
+    "id": 28,
+    "name": "Dark Revan",
+    "image": "https://static.wikia.nocookie.net/villains-fr/images/3/33/41744707f1748ace85d7964dc394aeb7.jpg/revision/latest?cb=20200823204217&path-prefix=fr",
+    "love": "https://preview.redd.it/858aoh0ynwb51.jpg?auto=webp&s=2b57f024df9994d913fb8558de4691b632ffb2a6",
+    "attack": 5,
+    "life": 5,
+    "deck": "dark"
+  },
+  {
+    "id": 29,
+    "name": "Dark Plagueis",
+    "image": "https://static.wikia.nocookie.net/frstarwars/images/7/74/Dark_Plagueis.jpg/revision/latest?cb=20160607175844",
+    "love": "https://comicvine.gamespot.com/a/uploads/original/11120/111205740/5122917-0693760495-50747.jpg",
+    "attack": 3,
+    "life": 5,
+    "deck": "dark"
+  },
+  {
+    "id": 30,
+    "name": "Asajj Ventress",
+    "image": "https://i.pinimg.com/originals/80/9f/16/809f16e65af3d0d7d5f1cd2f29001ca6.jpg",
+    "love": "https://images.squarespace-cdn.com/content/v1/5fbc4a62c2150e62cfcb09aa/1631337720847-SFUJ262S3MIN3TY2NETN/Ventress_cw.jpg?format=1000w",
+    "attack": 4,
+    "life": 3,
+    "deck": "dark"
+  }
+]
