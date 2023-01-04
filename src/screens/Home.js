@@ -15,6 +15,9 @@ function Home() {
   const [cardStateRectoOpponent, setCardStateRectoOpponent] =
     useState(`cardOpponentRecto`);
   const [loveCounterOpponent, setLoveCounterOpponent] = useState(4);
+  const [playerCardNumber, setPlayerCardNumber] = useState(0);
+  const [opponentCardNumber, setOpponentCardNumber] = useState(0);
+
   // Bloque le clic sur les postures
   const postureEventClickToggle = (action) => {
     const postureDisabled = document.getElementsByClassName("posture");
@@ -58,6 +61,8 @@ function Home() {
     }, 2000);
     // délais de 2sec
     setTimeout(() => {
+      setPlayerCardNumber(playerCardNumber + 1);
+      setOpponentCardNumber(opponentCardNumber + 1);
       // Remet les states en position d'origine
       changeStateCard("", "add", "Player");
     }, 3000);
@@ -77,12 +82,16 @@ function Home() {
             changeStateCard={changeStateCard}
             cardStateVerso={cardStateVersoOpponent}
             cardStateRecto={cardStateRectoOpponent}
+            deck={"dark"}
+            cardNumber={opponentCardNumber}
           />
           <CardPack
             perso="Player"
             changeStateCard={changeStateCard}
             cardStateVerso={cardStateVersoPlayer}
             cardStateRecto={cardStateRectoPlayer}
+            deck={"light"}
+            cardNumber={playerCardNumber}
           />
         </div>
 

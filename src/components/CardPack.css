@@ -95,3 +95,10 @@
 .love {
   filter: drop-shadow(0 0 2rem green);
 }
+.textCard {
+  transform: rotateY(180deg);
+}
+.imgCard {
+  width: 100px;
+  height: 100px;
+}
