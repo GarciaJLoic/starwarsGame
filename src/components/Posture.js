@@ -28,10 +28,22 @@ function Posture(props) {
         document
           .querySelector(`.card${perso}RectoActive`)
           .classList.add(`card${perso}RectoLove`);
+        document
+          .querySelector(`.card${perso}VersoActive`)
+          .classList.add(`card${perso}VersoLove`);
         progressBar.value = 0;
         document.getElementsByClassName(
           `posture${perso}`
         )[2].firstChild.innerHTML = "love";
+
+        console.log(props.deck);
+        if (perso === "Player") {
+          document.querySelector(`.imgCard${perso}`).src =
+            props.deck[props.cardNumber].love;
+        } else {
+          document.querySelector(`.imgCard${perso}`).src =
+            props.deckOpponent[props.opponentCardNumber].love;
+        }
       }
     }
   };
