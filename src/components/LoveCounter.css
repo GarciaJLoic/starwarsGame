@@ -33,7 +33,7 @@
 .progressBar::after {
   display: block;
   content: "";
-
+  z-index: 0;
   filter: drop-shadow(0 0 2rem blue);
 }
 .progressBar[data="0"]::after {

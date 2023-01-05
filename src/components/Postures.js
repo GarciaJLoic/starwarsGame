@@ -14,6 +14,10 @@ function Postures(props) {
         resetCardPick={props.resetCardPick}
         postureEventClickToggle={props.postureEventClickToggle}
         setLoveCounter={props.setLoveCounter}
+        deck={props.deck}
+        cardNumber={props.cardNumber}
+        deckOpponent={props.deckOpponent}
+        opponentCardNumber={props.opponentCardNumber}
       />
       <Posture
         classe="defensif"
@@ -23,6 +27,10 @@ function Postures(props) {
         resetCardPick={props.resetCardPick}
         postureEventClickToggle={props.postureEventClickToggle}
         setLoveCounter={props.setLoveCounter}
+        deck={props.deck}
+        cardNumber={props.cardNumber}
+        deckOpponent={props.deckOpponent}
+        opponentCardNumber={props.opponentCardNumber}
       />
       <Posture
         classe="love"
@@ -32,6 +40,10 @@ function Postures(props) {
         resetCardPick={props.resetCardPick}
         postureEventClickToggle={props.postureEventClickToggle}
         setLoveCounter={props.setLoveCounter}
+        deck={props.deck}
+        cardNumber={props.cardNumber}
+        deckOpponent={props.deckOpponent}
+        opponentCardNumber={props.opponentCardNumber}
       />
     </div>
   );

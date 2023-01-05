@@ -1,4 +1,6 @@
+/* eslint-disable no-unused-expressions */
 import { useState } from "react";
+import axios from "axios";
 import "./Home.css";
 import Avatar from "../components/Avatar";
 import CardPack from "../components/CardPack";
@@ -15,6 +17,25 @@ function Home() {
   const [cardStateRectoOpponent, setCardStateRectoOpponent] =
     useState(`cardOpponentRecto`);
   const [loveCounterOpponent, setLoveCounterOpponent] = useState(4);
+  const [playerCardNumber, setPlayerCardNumber] = useState(0);
+  const [opponentCardNumber, setOpponentCardNumber] = useState(0);
+  const [deckPlayer, setDeckPlayer] = useState([""]);
+  const [deckOpponent, setDeckOpponent] = useState([""]);
+  const getCardDeck = (deckName) => {
+    axios
+      .get(
+        "https://raw.githubusercontent.com/GarciaJLoic/starwarsGame/002-Deck/all.json"
+      )
+      .then((res) => res.data)
+      .then((data) => {
+        (deckName === "dark" ? setDeckOpponent : setDeckPlayer)(
+          data
+            .filter((e) => e.deck === deckName) // filtre l'api pour ne garder que les cartes faisant partie du bon deck
+            .sort(() => Math.random() - 0.5) // mélange le deck
+        );
+      });
+  };
+
   // Bloque le clic sur les postures
   const postureEventClickToggle = (action) => {
     const postureDisabled = document.getElementsByClassName("posture");
@@ -58,6 +79,8 @@ function Home() {
     }, 2000);
     // délais de 2sec
     setTimeout(() => {
+      setPlayerCardNumber(playerCardNumber + 1); // Passe à la carte suivante
+      setOpponentCardNumber(opponentCardNumber + 1); // Passe à la carte suivante
       // Remet les states en position d'origine
       changeStateCard("", "add", "Player");
     }, 3000);
@@ -66,7 +89,12 @@ function Home() {
     <div className="home">
       <div className="blockGame">
         <div id="opponent">
-          <Postures perso="Opponent" setLoveCounter={setLoveCounterOpponent} />
+          <Postures
+            deck={deckOpponent}
+            perso="Opponent"
+            setLoveCounter={setLoveCounterOpponent}
+            cardNumber={opponentCardNumber}
+          />
           <Avatar perso="opponent" />
         </div>
 
@@ -77,12 +105,20 @@ function Home() {
             changeStateCard={changeStateCard}
             cardStateVerso={cardStateVersoOpponent}
             cardStateRecto={cardStateRectoOpponent}
+            deckName={"dark"}
+            cardNumber={opponentCardNumber}
+            deck={deckOpponent}
+            getCardDeck={getCardDeck}
           />
           <CardPack
             perso="Player"
             changeStateCard={changeStateCard}
             cardStateVerso={cardStateVersoPlayer}
             cardStateRecto={cardStateRectoPlayer}
+            deckName={"light"}
+            cardNumber={playerCardNumber}
+            deck={deckPlayer}
+            getCardDeck={getCardDeck}
           />
         </div>
 
@@ -94,6 +130,10 @@ function Home() {
             resetCardPick={resetCardPickPlayer}
             postureEventClickToggle={postureEventClickToggle}
             setLoveCounter={setLoveCounterPlayer}
+            deck={deckPlayer}
+            cardNumber={playerCardNumber}
+            deckOpponent={deckOpponent}
+            opponentCardNumber={opponentCardNumber}
           />
         </div>
       </div>
