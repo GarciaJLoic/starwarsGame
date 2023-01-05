@@ -20,9 +20,9 @@ function CardPack({
   }, []);
   isLoading ? setLoading(false) : null; // Attand que la page soit chargée avant de faire appaitre les cartes
   // console.log(deck);
+
   return (
     <div className={`blocKCard${perso}`}>
-      {console.log(deckName, deck)}
       <div className={`cardPack${perso}`}></div>
       <div className={`card ${cardStateRecto}`}>
         {!isLoading ? (
@@ -35,7 +35,7 @@ function CardPack({
             <h3>{deck[cardNumber].name}</h3>
             <p>
               <img className="iconeCard" src={attack} alt={attack} />
-              {deck[cardNumber].attack}
+              <span id={`attack${perso}`}>{deck[cardNumber].attack}</span>
               <img className="iconeCard" src={life} alt={life} />
               {deck[cardNumber].life}
             </p>
